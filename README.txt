@@ -8,4 +8,4 @@ At the time of making this package nothing was available (at least I could not f
     kml.save("botanicalgarden.kml")
 
 See the http://simplekml.readthedocs.org for usage and reference.
-Visit http://code.google.com/p/simplekml/ for the homepage.
+Visit https://pypi.python.org/pypi/simplekml/ to download the latest version.
