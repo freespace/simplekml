@@ -402,15 +402,30 @@ class Feature(Kmlable):
 
     def __str__(self):
         buf = []
+        
         for stylemap in self._stylemaps:
             self._addstyle(stylemap.normalstyle)
             self._addstyle(stylemap.highlightstyle)
         str = '<{0} id="{1}">'.format(self.__class__.__name__, self._id)
         buf.append(str)
+        
+
         for style in self._styles:
-            buf.append(style.__str__())
+            if Kmlable._compiling:
+                if style.id not in Kmlable._currentroot._processedstyles:
+                    buf.append(style.__str__())
+                    Kmlable._currentroot._processedstyles.append(style.id)
+            else:
+                buf.append(style.__str__())
+        
         for stylemap in self._stylemaps:
-            buf.append(stylemap.__str__())
+            if Kmlable._compiling:
+                if stylemap.id not in Kmlable._currentroot._processedstyles:
+                    buf.append(stylemap.__str__())
+                    Kmlable._currentroot._processedstyles.append(stylemap.id)
+            else:
+                buf.append(stylemap.__str__())
+    
         buf.append(super(Feature, self).__str__())
         for folder in self._folders:
             buf.append(folder.__str__())

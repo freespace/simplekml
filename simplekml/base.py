@@ -20,16 +20,16 @@ Contact me at kyle.lan@gmail.com
 import os
 import cgi
 import xml.dom.minidom
+import warnings
 from simplekml.makeunicode import u
 
 class Kmlable(object):
     """Enables a subclass to be converted into KML."""
-
-    _images = []
-    _kmz = False
-    _parse = True
+    
+    _currentroot = None
+    _compiling = False
     _namespaces = ['xmlns="http://www.opengis.net/kml/2.2"', 'xmlns:gx="http://www.google.com/kml/ext/2.2"']
-
+    
     def __init__(self):
         try:
             from collections import OrderedDict
@@ -39,30 +39,42 @@ class Kmlable(object):
 
     def __str__(self):
         """This is where the magic happens."""
+        parsetext = True
+        outputkmz = False
+        
+        if Kmlable._compiling:
+            parsetext = Kmlable._currentroot._parsetext
+            outputkmz = Kmlable._currentroot._outputkmz            
+        
         buf = []
         for var, val in self._kml.items():
             if val is not None:  # Exclude all variables that are None
                 if var.endswith("_"):
                     buf.append(u"{0}".format(val))  # Use the variable's __str__ as is
                 else:
-                    if var in ['name', 'description', 'text', 'linkname', 'linkdescription', 'message', 'change', 'create', 'delete'] and Kmlable._parse: # Parse value for HTML and convert
+                    if var in ['name', 'description', 'text', 'linkname', 'linkdescription', 'message', 'change', 'create', 'delete', 'link'] and parsetext: # Parse value for HTML and convert
                         val = Kmlable._chrconvert(val)
-                    elif (var == 'href' and os.path.exists(val) and Kmlable._kmz == True)\
-                            or (var == 'targetHref' and os.path.exists(val) and Kmlable._kmz == True): # Check for images
-                        Kmlable._addimage(val)
+                    elif (var == 'href' and os.path.exists(val) and outputkmz == True)\
+                            or (var == 'targetHref' and os.path.exists(val) and outputkmz == True): # Check for images
+                        Kmlable._currentroot._foundimages.append(val)
                         val = os.path.join('files', os.path.split(val)[1]).replace('\\', '/')
+                        val = Kmlable._chrconvert(val)
+                    elif (var in ['href', 'targetHref']):
+                        val = Kmlable._chrconvert(val)
                     buf.append(u("<{0}>{1}</{0}>").format(var, val))  # Enclose the variable's __str__ with its name
                     # Add namespaces
-                    if var.startswith("atom:") and 'xmlns:atom="http://www.w3.org/2005/Atom"' not in Kmlable._namespaces:
-                        Kmlable._namespaces.append('xmlns:atom="http://www.w3.org/2005/Atom"')
-                    elif var.startswith("xal:") and 'xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"' not in Kmlable._namespaces:
-                        Kmlable._namespaces.append('xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"')
+                    if Kmlable._compiling:
+                        if var.startswith("atom:") and 'xmlns:atom="http://www.w3.org/2005/Atom"' not in Kmlable._currentroot._namespaces:
+                            Kmlable._currentroot._namespaces.append('xmlns:atom="http://www.w3.org/2005/Atom"')
+                        elif var.startswith("xal:") and 'xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"' not in Kmlable._currentroot._namespaces:
+                            Kmlable._currentroot._namespaces.append('xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"')
+                    else:
+                        if var.startswith("atom:") and 'xmlns:atom="http://www.w3.org/2005/Atom"' not in Kmlable._namespaces:
+                            Kmlable._currentroot.append('xmlns:atom="http://www.w3.org/2005/Atom"')
+                        elif var.startswith("xal:") and 'xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"' not in Kmlable._namespaces:
+                            Kmlable._currentroot.append('xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0"')
+                    
         return "".join(buf)
-
-    @classmethod
-    def _parsetext(cls, parse=True):
-        """Sets whether text elements are escaped."""
-        Kmlable._parse = parse
 
     @classmethod
     def _chrconvert(cls, text):
@@ -80,28 +92,9 @@ class Kmlable(object):
         else:
             endtext = cgi.escape(text)
         return endtext
-
-    @classmethod
-    def _addimage(cls, image):
-        Kmlable._images.append(image)
-
-    @classmethod
-    def _getimages(cls):
-        return set(Kmlable._images)
-
-    @classmethod
-    def _clearimages(cls):
-        Kmlable._images = []
-
-    @classmethod
-    def _setkmz(cls, kmz=True):
-        Kmlable._kmz = kmz
-
-    @classmethod
-    def _getnamespaces(cls):
-        """Return the namespaces as a string."""
-        return " ".join(Kmlable._namespaces)
-
+    
+    def addfile(self, path):
+        raise NotImplementedError("This method is no longer available for this class. The addfile method may only be called from the Kml class (since version 1.2.8)")
 
 class Vector2(object):
     """Abstract class representing a vector.

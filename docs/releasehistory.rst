@@ -1,6 +1,16 @@
 Release History
 ===============
 
+simplekml 1.2.8 - 07 June 2015
+------------------------------
+**Fixes**
+  * Fixed "global" styles repeating in each container.
+  * Fixed ampersand (&) not escaping correctly in urls.
+  * Fixed problem where files added via :func:`simplekml.Kml.addfile` were forgotten.
+  
+ **Changes**
+  * Moved the method :func:`simplekml.Kml.addfile` from being available from all classes to being available only via :class:`simplekml.Kml`
+
 simplekml 1.2.7 - 08 February 2015
 ----------------------------------
 **Fixes**
