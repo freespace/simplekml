@@ -1,4 +1,4 @@
-**simplekml** is a python package which enables you to generate KML with as little effort as possible.
+**SIMPLEKML** is a python package which enables you to generate KML with as little effort as possible.
 
 Visit http://pypi.python.org/pypi/simplekml/ to download the latest version.
 
