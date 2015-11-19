@@ -262,6 +262,10 @@ class Kml(Kmlable):
 
     def kml(self, format=True):
         """Returns the kml as a string or "prettyprinted" if `format = True`.
+        
+        .. note::
+            Setting `format = False` will produce smaller files, as well as
+            decrease the memory required while processing the kml.
 
         PrettyPrinted Example (default)::
 
@@ -311,6 +315,10 @@ class Kml(Kmlable):
 
         The KML is saved to a file in one long string if `format=False` else it
         gets saved "prettyprinted" (as formatted xml). This works the same as :func:`simplekml.Kml.kml`
+        
+        .. note::
+            Setting `format = False` will produce smaller files, as well as
+            decrease the memory required while processing the kml.
 
         Usage::
 
