@@ -766,7 +766,7 @@ class Geometry(Kmlable):
 
     @property
     def id(self):
-        """The id string."""
+        """The id string (read only)."""
         return self._id
 
     @property
