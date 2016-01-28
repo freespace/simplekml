@@ -1213,6 +1213,7 @@ class Point(PointGeometry):
         for lon in range(2):  # Generate longitude values
             for lat in range(2): # Generate latitude values
                pnt = kml.newpoint(name='Point: {0}{0}'.format(lon,lat))
+               pnt.coords = [(lon, lat)] 
                pnt.style = style
         kml.save("Point Shared Style.kml")
     """
