@@ -34,7 +34,7 @@
 18
 19
 20
-21&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+21&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml
 
 kml &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; Kml(name&lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #BA2121&quot;&gt;&amp;quot;Usage&amp;quot;&lt;/span&gt;, &lt;span style=&quot;color: #008000&quot;&gt;open&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;=1&lt;/span&gt;) &lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;# open=1 just opens the document in the TOC (table of contents). Not a necessary step.&lt;/span&gt;
@@ -136,7 +136,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 69
 70
 71
-72&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;__future__&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; unicode_literals
+72&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;__future__&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; unicode_literals
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml, ColorMode, AltitudeMode, Style
 
@@ -263,7 +263,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 43
 44
 45
-46&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+46&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml, ListItemType, Color
 
 kml &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; Kml(name&lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #BA2121&quot;&gt;&amp;quot;Styling&amp;quot;&lt;/span&gt;, &lt;span style=&quot;color: #008000&quot;&gt;open&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;=1&lt;/span&gt;)
@@ -373,7 +373,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 52
 53
 54
-55&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+55&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #666666&quot;&gt;*&lt;/span&gt;
 
@@ -514,7 +514,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 74
 75
 76
-77&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+77&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml, Model, AltitudeMode, Orientation, Scale
 
 &lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;# Coordinates and timestamps to be used to locate the car model in time and space&lt;/span&gt;
@@ -753,7 +753,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 141
 142
 143
-144&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+144&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt;
 
 &lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;# Cities of the World with their coordinates and time corresponding to 12:00 noon, Eastern Standard Time&lt;/span&gt;
@@ -935,7 +935,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 26
 27
 28
-29&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+29&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt;
 
 &lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;# Create an instance of Kml&lt;/span&gt;
@@ -1025,7 +1025,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 49
 50
 51
-52&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+52&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml, Color
 
 kml &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; Kml(name&lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #BA2121&quot;&gt;&amp;quot;MultiGeometry&amp;quot;&lt;/span&gt;, &lt;span style=&quot;color: #008000&quot;&gt;open&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;=1&lt;/span&gt;)
@@ -1121,7 +1121,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 32
 33
 34
-35&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+35&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml, OverlayXY, ScreenXY, Units, Camera, AltitudeMode, ViewVolume
 
 kml &lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt; Kml(name&lt;span style=&quot;color: #666666&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #BA2121&quot;&gt;&amp;quot;Overlays&amp;quot;&lt;/span&gt;, &lt;span style=&quot;color: #008000&quot;&gt;open&lt;/span&gt;&lt;span style=&quot;color: #666666&quot;&gt;=1&lt;/span&gt;)
@@ -1242,7 +1242,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 74
 75
 76
-77&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+77&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml, Types, Snippet, Color
 
 &lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;# The KML&lt;/span&gt;
@@ -1394,7 +1394,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 63
 64
 65
-66&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+66&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt; &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; Kml, Snippet, Types
 
 &lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;# Data for the track&lt;/span&gt;
@@ -1506,7 +1506,7 @@ kml&lt;span style=&quot;color: #666666&quot;&gt;.&lt;/span&gt;save(os&lt;span st
 34
 35
 36
-37&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
+37&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot; style=&quot;background: #f8f8f8&quot;&gt;&lt;pre style=&quot;line-height: 125%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;os&lt;/span&gt;
 &lt;span style=&quot;color: #008000; font-weight: bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color: #0000FF; font-weight: bold&quot;&gt;simplekml&lt;/span&gt;
 
 &lt;span style=&quot;color: #408080; font-style: italic&quot;&gt;# Create an instance of kml&lt;/span&gt;

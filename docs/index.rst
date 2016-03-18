@@ -6,6 +6,7 @@ The python package simplekml was created to generate kml (or kmz). It was design
 
 If you want get started right away you can download the latest version from `PyPi <http://pypi.python.org/pypi/simplekml/>`_ and then head over to :ref:`getting-started` for a quick example.
 
+Simplekml is licensed under the `GNU Lesser General Public License <http://www.gnu.org/licenses/lgpl-3.0.en.html>`_.
 
 Resources
 =========

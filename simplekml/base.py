@@ -261,13 +261,15 @@ class KmlElement(xml.dom.minidom.Element):
     @classmethod
     def patch(cls):
         """Patch xml.dom.minidom.Element to use KmlElement instead."""
-        cls._original_element = xml.dom.minidom.Element
-        xml.dom.minidom.Element = KmlElement
+        if xml.dom.minidom.Element != KmlElement: 
+            cls._original_element = xml.dom.minidom.Element 
+            xml.dom.minidom.Element = KmlElement
 
     @classmethod
     def unpatch(cls):
         """Unpatch xml.dom.minidom.Element to use the Element class used last."""
-        xml.dom.minidom.Element = cls._original_element
+        if xml.dom.minidom.Element == KmlElement:
+            xml.dom.minidom.Element = cls._original_element
 
     def writexml(self, writer, indent="", addindent="", newl=""):
         """If the element only contains a single string value then don't add white space around it."""

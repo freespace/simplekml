@@ -180,7 +180,7 @@ A :class:`simplekml.Point` has two 'substyles' that can be altered to render it:
     pnt = kml.newpoint(name="Kirstenbosch", coords=[(18.432314,-33.988862)])
     pnt.style.labelstyle.color = 'ff0000ff'  # Red
 
-That changed the text "Kirstenbosch" to red. See `KML Reference <http://code.google.com/apis/kml/documentation/kmlreference.html#color KML Reference>`_ for the format of the color string (you could also use the :class:`simplekml.Color` class). Now lets edit some more of the style::
+That changed the text "Kirstenbosch" to red. See `the KML Reference <http://code.google.com/apis/kml/documentation/kmlreference.html#color the KML Reference>`_ for the format of the color string (you could also use the :class:`simplekml.Color` class). Now lets edit some more of the style::
 
     pnt.style.labelstyle.scale = 2  # Text twice as big
     pnt.style.iconstyle.color = 'ffff0000'  # Blue

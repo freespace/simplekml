@@ -106,12 +106,12 @@
                 <when>2010-05-28T02:30:00Z</when>
                 <when>2010-05-28T02:40:00Z</when>
                 <when>2010-05-28T02:50:00Z</when>
-                <gx:coord>18.362713056 -34.0179270707 0</gx:coord>
-                <gx:coord>18.3624993914 -34.0176272852 0</gx:coord>
-                <gx:coord>18.3624768126 -34.0173664463 0</gx:coord>
-                <gx:coord>18.3623792802 -34.017236659 0</gx:coord>
-                <gx:coord>18.362233919 -34.0172544564 0</gx:coord>
-                <gx:coord>18.3620308611 -34.0169398951 0</gx:coord>
+                <gx:coord>18.36271305597591 -34.01792707074279 0</gx:coord>
+                <gx:coord>18.36249939144205 -34.01762728515967 0</gx:coord>
+                <gx:coord>18.36247681257987 -34.01736644626698 0</gx:coord>
+                <gx:coord>18.36237928017156 -34.01723665897296 0</gx:coord>
+                <gx:coord>18.36223391902398 -34.0172544563783 0</gx:coord>
+                <gx:coord>18.36203086107577 -34.01693989513787 0</gx:coord>
                 <ExtendedData>
                     <SchemaData schemaUrl="#schema_2">
                         <gx:SimpleArrayData name="birdseen">

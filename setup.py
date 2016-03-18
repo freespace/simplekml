@@ -22,11 +22,11 @@ from distutils.core import setup
 setup(
     name = 'simplekml',
     packages = ['simplekml'],
-    version = '1.2.81',
+    version = '1.3.0',
     description = 'A Simple KML creator',
     author='Kyle Lancaster',
     author_email='kyle.lan@gmail.com',
-    url='http://code.google.com/p/simplekml/',
+    url='http://www.simplekml.com/',
     license='GNU Lesser General Public License v3+',
     classifiers=[
             'Development Status :: 5 - Production/Stable',
@@ -39,6 +39,7 @@ setup(
             'Programming Language :: Python :: 3.2',
             'Programming Language :: Python :: 3.3',
             'Programming Language :: Python :: 3.4',
+            'Programming Language :: Python :: 3.5',
             'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
             'Operating System :: OS Independent',
             'Topic :: Scientific/Engineering :: GIS',

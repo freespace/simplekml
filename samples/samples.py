@@ -10,7 +10,7 @@ formatter.get_style_defs('.highlight')
 
 file_path, file_name = os.path.split(os.path.abspath(__file__))
 
-folders = ['Examples', 'Tutorials']
+folders = ['examples', 'tutorials']
 
 kml = simplekml.Kml()
 kml.document = simplekml.Folder(name="Samples Index")
