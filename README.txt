@@ -9,5 +9,5 @@ At the time of making this package nothing was available (at least I could not f
 
 See the Homepage_ for usage, documentation and a reference or visit the Repository_ for the source code and to log bug reports.
 
-.. _Homepage: http://www.simplekml.com/
+.. _Homepage: http://readthedocs.org/projects/simplekml/
 .. _Repository: https://bitbucket.org/KyleLancaster/simplekml
