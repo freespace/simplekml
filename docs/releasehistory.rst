@@ -1,6 +1,13 @@
 Release History
 ===============
 
+simplekml 1.3.1 - 08 August 2018
+--------------------------------
+**Changes**
+  * Removed email from source files
+  * Changed PyPi classifications for Python 3 to all versions of 3
+  * Updated readme by removing expired websites
+
 simplekml 1.3.0 - 18 March 2016
 -------------------------------
 **Fixes**

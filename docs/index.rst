@@ -12,14 +12,6 @@ Resources
 =========
 
   * `Download <http://pypi.python.org/pypi/simplekml/>`_ the latest version from PyPi.
-  
-  * `Source Code <https://bitbucket.org/KyleLancaster/simplekml>`_  is hosted on BitBucket.
-  
-  * `Bug Reporting <https://bitbucket.org/KyleLancaster/simplekml/issues>`_  and feature requests are welcome.
-  
-  * `Google Group <https://groups.google.com/forum/?fromgroups#!forum/simplekml>`_ for discussions, questions, comments or requests
-
-  * `Samples File <https://bitbucket.org/KyleLancaster/simplekml/raw/tip/samples/SamplesLink.kml>`_ (right-click > Save link as...) for example code with corresponding KML. This file is simply a network link. When examples and tutorials are updated the updates will reflect in the sample file (needs to be redownloaded if it was downloaded prior to 1.2.8).
 
   * `KML Reference <https://developers.google.com/kml/documentation/kmlreference?csw=1>`_ as published by Google for a good understanding of what KML is capable of.
   
