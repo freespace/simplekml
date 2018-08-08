@@ -14,7 +14,6 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Contact me at kyle.lan@gmail.com
 """
 
 from distutils.core import setup
@@ -22,11 +21,11 @@ from distutils.core import setup
 setup(
     name = 'simplekml',
     packages = ['simplekml'],
-    version = '1.3.0',
+    version = '1.3.1',
     description = 'A Simple KML creator',
     author='Kyle Lancaster',
     author_email='kyle.lan@gmail.com',
-    url='http://www.simplekml.com/',
+    url='http://readthedocs.org/projects/simplekml/',
     license='GNU Lesser General Public License v3+',
     classifiers=[
             'Development Status :: 5 - Production/Stable',
@@ -34,12 +33,6 @@ setup(
             'Programming Language :: Python :: 2.6',
             'Programming Language :: Python :: 2.7',
             'Programming Language :: Python :: 3',
-            'Programming Language :: Python :: 3.0',
-            'Programming Language :: Python :: 3.1',
-            'Programming Language :: Python :: 3.2',
-            'Programming Language :: Python :: 3.3',
-            'Programming Language :: Python :: 3.4',
-            'Programming Language :: Python :: 3.5',
             'License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)',
             'Operating System :: OS Independent',
             'Topic :: Scientific/Engineering :: GIS',

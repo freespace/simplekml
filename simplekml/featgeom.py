@@ -1,5 +1,5 @@
 """
-Copyright 2011-2016 Kyle Lancaster
+Copyright 2011-2018 Kyle Lancaster
 
 Simplekml is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -14,7 +14,6 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Contact me at kyle.lan@gmail.com
 """
 
 from simplekml.abstractview import Camera, LookAt
@@ -40,7 +39,6 @@ class Feature(Kmlable):
       Not to be used directly.
     """
 
-    _id = 0
     def __init__(self,
                  name=None,
                  visibility=None,
@@ -59,7 +57,6 @@ class Feature(Kmlable):
                  region=None,
                  extendeddata=None,
                  gxballoonvisibility=None):
-        Feature._id += 1
         super(Feature, self).__init__()
         self._kml['name'] = name
         self._kml['visibility'] = visibility
@@ -79,7 +76,6 @@ class Feature(Kmlable):
         self._kml['styleUrl'] = None
         self._kml['ExtendedData'] = extendeddata
         self._kml['gx:balloonVisibility'] = gxballoonvisibility
-        self._id = "feat_{0}".format(Feature._id)
         self._style = None
         self._stylemap = None
         self._features = []
@@ -752,11 +748,8 @@ class Geometry(Kmlable):
     .. note::
        Not to be used directly.
     """
-    _id = 0
     def __init__(self, **kwargs):
         super(Geometry, self).__init__()
-        self._id = "geom_{0}".format(Geometry._id)
-        Geometry._id += 1
         self._placemark = Placemark(**kwargs)
         self._placemark.geometry = self
         self._parent = None

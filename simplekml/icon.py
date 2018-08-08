@@ -1,5 +1,5 @@
 """
-Copyright 2011-2016 Kyle Lancaster
+Copyright 2011-2018 Kyle Lancaster
 
 Simplekml is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -14,7 +14,6 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Contact me at kyle.lan@gmail.com
 """
 
 from simplekml.base import Kmlable
@@ -36,7 +35,6 @@ class Link(Kmlable):
         netlink.link.viewrefreshmode = simplekml.ViewRefreshMode.onrequest
         kml.save("Link.kml")
     """
-    _id = 0
 
     def __init__(self,
                  href=" ",
@@ -56,8 +54,6 @@ class Link(Kmlable):
         self._kml["viewBoundScale"] = viewboundscale
         self._kml["viewFormat"] = viewformat
         self._kml["httpQuery"] = httpquery
-        self._id = "link_{0}".format(Link._id)
-        Link._id += 1
 
     @property
     def id(self):

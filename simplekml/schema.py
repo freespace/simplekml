@@ -1,5 +1,5 @@
 """
-Copyright 2011-2016 Kyle Lancaster
+Copyright 2011-2018 Kyle Lancaster
 
 Simplekml is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -14,7 +14,6 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Contact me at kyle.lan@gmail.com
 """
 
 from simplekml.base import Kmlable, check
@@ -160,10 +159,7 @@ class Schema(Kmlable):
     The arguments are the same as the properties.
     """
 
-    _id = 0
     def __init__(self, name=None):
-        self._id = "schema_{0}".format(Schema._id + 1)
-        Schema._id += 1
         super(Schema, self).__init__()
         self._kml['name'] = name
         self.simplefields = []

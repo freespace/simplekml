@@ -1,5 +1,5 @@
 """
-Copyright 2011-2016 Kyle Lancaster
+Copyright 2011-2018 Kyle Lancaster
 
 Simplekml is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -14,7 +14,6 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Contact me at kyle.lan@gmail.com
 """
 
 import os
@@ -25,12 +24,14 @@ from simplekml.makeunicode import u
 
 class Kmlable(object):
     """Enables a subclass to be converted into KML."""
-    
+    _globalid = 0
     _currentroot = None
     _compiling = False
     _namespaces = ['xmlns="http://www.opengis.net/kml/2.2"', 'xmlns:gx="http://www.google.com/kml/ext/2.2"']
     
     def __init__(self):
+        self._id = str(Kmlable._globalid)
+        Kmlable._globalid += 1
         try:
             from collections import OrderedDict
             self._kml = OrderedDict()

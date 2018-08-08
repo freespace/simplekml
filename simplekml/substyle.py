@@ -1,5 +1,5 @@
 """
-Copyright 2011-2016 Kyle Lancaster
+Copyright 2011-2018 Kyle Lancaster
 
 Simplekml is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -14,7 +14,6 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Contact me at kyle.lan@gmail.com
 """
 
 from simplekml.base import Kmlable, HotSpot, check
@@ -30,13 +29,9 @@ class ColorStyle(Kmlable):
     .. note::
       Not to be used directly.
     """
-    
-    _id = 0
 
     def __init__(self, color=None, colormode=ColorMode.normal):
         super(ColorStyle, self).__init__()
-        self._id = "substyle_{0}".format(ColorStyle._id)
-        ColorStyle._id += 1
         self._kml["color"] = color
         self._kml["colorMode"] = colormode
         
@@ -306,15 +301,12 @@ class BalloonStyle(Kmlable):
         kml.save("BalloomStyle.kml")
     """
     
-    _id = 0
     def __init__(self,
                  bgcolor=None,
                  textcolor=None,
                  text=None,
                  displaymode=DisplayMode.default):
         super(BalloonStyle, self).__init__()
-        self._id = "balloonstyle_{0}".format(BalloonStyle._id)
-        BalloonStyle._id += 1
         self._kml["bgColor"] = bgcolor
         self._kml["textColor"] = textcolor
         self._kml["text"] = text
@@ -378,14 +370,11 @@ class ListStyle(Kmlable):
         kml.save("ListStyle.kml")
     """
 
-    _id = 0
     def __init__(self,
                  listitemtype=ListItemType.check,
                  bgcolor=None,
                  itemicon=None):
         super(ListStyle, self).__init__()
-        self._id = "liststyle_{0}".format(ListStyle._id)
-        ListStyle._id += 1
         self._kml["listItemType"] = listitemtype
         self._kml["bgColor"] = bgcolor
         self._kml["ItemIcon"] = itemicon

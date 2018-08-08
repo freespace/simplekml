@@ -40,6 +40,8 @@ pol = kml.newpolygon(name="Atrium Garden",
 pol.polystyle.color = '990000ff'  # Red
 pol.polystyle.outline = 0
 
+
+
 # A Point showing off a BalloonStyle
 pnt = kml.newpoint(name="BallonStyle", coords=[(18.429191, -33.987286)])
 pnt.balloonstyle.text = "These are trees and this text is blue with a green background."

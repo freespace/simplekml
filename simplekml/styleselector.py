@@ -1,5 +1,5 @@
 """
-Copyright 2011-2016 Kyle Lancaster
+Copyright 2011-2018 Kyle Lancaster
 
 Simplekml is free software: you can redistribute it and/or modify
 it under the terms of the GNU Lesser General Public License as published by
@@ -14,7 +14,6 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Contact me at kyle.lan@gmail.com
 """
 
 from simplekml.base import Kmlable, check
@@ -26,11 +25,9 @@ class StyleSelector(Kmlable):
 
     There are no arguments.
     """
-    _id = 0
+
     def __init__(self):
         super(StyleSelector, self).__init__()
-        self._id = "stylesel_{0}".format(StyleSelector._id)
-        StyleSelector._id += 1
 
     @property
     def id(self):
