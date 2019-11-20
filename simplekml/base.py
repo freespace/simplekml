@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 
 import os
-import cgi
+import html
 import xml.dom.minidom
 import warnings
 from simplekml.makeunicode import u
@@ -86,12 +86,12 @@ class Kmlable(object):
         count = text.count(cdatastart)
         if count > 0:
             for i in range(count):
-                endtext += cgi.escape(starttext[0:starttext.find(cdatastart)])
+                endtext += html.escape(starttext[0:starttext.find(cdatastart)])
                 endtext += starttext[starttext.find(cdatastart):starttext.find(cdataend)+len(cdataend)]
                 starttext = starttext[starttext.find(cdataend)+len(cdataend):]
             endtext += starttext
         else:
-            endtext = cgi.escape(text)
+            endtext = html.escape(text)
         return endtext
     
     def addfile(self, path):
